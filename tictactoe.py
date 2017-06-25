@@ -1,23 +1,3 @@
-game = [[1, 2, 0], [2, 1, 0], [2, 1, 1]]
-winner_is_2 = [[2, 2, 0],
-	[2, 1, 0],
-	[2, 1, 1]]
-
-winner_is_1 = [[1, 2, 0],
-	[2, 1, 0],
-	[2, 1, 1]]
-
-winner_is_also_1 = [[0, 1, 0],
-	[2, 1, 0],
-	[2, 1, 1]]
-
-no_winner = [[1, 2, 0],
-	[2, 1, 0],
-	[2, 1, 2]]
-
-also_no_winner = [[1, 2, 0],
-	[2, 1, 0],
-	[2, 1, 0]]
 
 
 def DrawBoard(size):
@@ -26,7 +6,7 @@ def DrawBoard(size):
 		print("|   " * (size + 1))
 	print(" ---" * size)
 	return 
-	
+
 def checkDiagonalsForWinner(grid):
 	if grid[1][1] != 0:
 		diagonalOne = [grid[0][0], grid[1][1], grid[2][2]]
