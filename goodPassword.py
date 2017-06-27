@@ -1,7 +1,10 @@
+password = "feheeehk"
+
 def passwordCheckVowels(password):
     countVowels = 0
+    vowels = ['a', 'e', 'i', 'o', 'u']
     for char in password:
-        if char == 'a' or char == 'e' or char == 'o' or char == 'i' or char == 'u':
+        if any(x in char for x in vowels):
             countVowels+=1
     if countVowels >= 3:
         return 'true'
@@ -31,3 +34,6 @@ def passwordCheckStrings(password):
         return 'false'
     else:
         return 'true'
+
+for ()
+print(passwordCheckVowels(password))
